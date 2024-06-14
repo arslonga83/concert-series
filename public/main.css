@@ -11965,3 +11965,15 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+@font-face {
+  font-family: klinicSlab;
+  src: url(/fonts/KlinicSlabMedium.otf);
+}
+@font-face {
+  font-family: klinicSlab;
+  font-weight: bold;
+  src: url(/fonts/KlinicSlabBold.otf);
+}
+:root {
+  --bs-body-font-family: "klinicSlab";
+}

@@ -1,7 +1,4 @@
-// Custom.scss
-// Option A: Include all of Bootstrap
-
-// Include any default variable overrides here (though functions won't be available)
+// customize color palette and import bootstrap css
 
 $primary: #50A4BF;  
 $dark: #332E20;
@@ -9,7 +6,21 @@ $light: #FFFFFF;
 $secondary: #B9D9EB;
 $danger: #B7BF10;
 
-
 @import "../node_modules/bootstrap/scss/bootstrap";
 
-// Then add additional custom code here
+// link custom font files and set as main font family
+
+@font-face {
+  font-family: klinicSlab;
+  src: url(/fonts/KlinicSlabMedium.otf);
+}
+
+@font-face {
+  font-family: klinicSlab;
+  font-weight: bold;
+  src: url(/fonts/KlinicSlabBold.otf);
+}
+
+:root {
+  --bs-body-font-family: 'klinicSlab';
+}
