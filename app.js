@@ -2,6 +2,7 @@ const express = require('express')
 const app = express()
 const port = process.env.PORT || 3000
 const path = require('path')
+const ExpressError = require('./utils/ExpressError')
 const ejsMate = require('ejs-mate');
 
 app.engine('ejs', ejsMate);
@@ -29,6 +30,18 @@ app.get('/archive', (req, res) => {
 
 app.get('/contact', (req, res) => {
   res.render('contact')
+})
+
+app.all('*', (req, res, next) => {
+  next(new ExpressError('Page not found', 404))
+})
+
+app.use((err, req, res, next) => {
+  const { statusCode = 500 } = err
+  if(!err.message) err.message = 'Something Went Wrong!'
+  res.status(statusCode)
+  res.render('errors', { err })
+  console.log(err)
 })
 
 app.listen(port, () => {
