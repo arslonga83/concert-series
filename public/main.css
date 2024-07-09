@@ -4,6 +4,7 @@
  * Copyright 2011-2024 The Bootstrap Authors
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 :root,
 [data-bs-theme=light] {
   --bs-blue: #0d6efd;
@@ -11965,15 +11966,48 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-@font-face {
-  font-family: klinicSlab;
-  src: url(/fonts/KlinicSlabMedium.otf);
-}
-@font-face {
-  font-family: klinicSlab;
-  font-weight: bold;
-  src: url(/fonts/KlinicSlabBold.otf);
-}
 :root {
-  --bs-body-font-family: "klinicSlab";
+  --bs-body-font-family: "PT Sans";
+}
+
+.section-shape-left {
+  -webkit-clip-path: ellipse(1287px 290px at 75.18% 32.73%);
+          clip-path: ellipse(1287px 290px at 75.18% 32.73%);
+}
+
+.section-shape-right {
+  -webkit-clip-path: ellipse(1287px 316px at 12.92% 6.59%);
+          clip-path: ellipse(1287px 316px at 12.92% 6.59%);
+}
+
+.cut-top-left {
+  -webkit-clip-path: polygon(0 var(--offset), 100% 0, 100% 100%, 0 100%);
+          clip-path: polygon(0 var(--offset), 100% 0, 100% 100%, 0 100%);
+}
+
+.cut-top-right {
+  -webkit-clip-path: polygon(0 0, 100% var(--offset), 100% 100%, 0 100%);
+          clip-path: polygon(0 0, 100% var(--offset), 100% 100%, 0 100%);
+}
+
+.cut-bottom-left {
+  margin-bottom: calc(var(--offset) * -1);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - var(--offset)));
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - var(--offset)));
+}
+
+.cut-bottom-right {
+  margin-bottom: calc(var(--offset) * -1);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - var(--offset)), 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% calc(100% - var(--offset)), 0 100%);
+}
+
+.slant-up {
+  -webkit-clip-path: polygon(0 20%, 100% 0%, 100% 80%, 0% 100%);
+          clip-path: polygon(0 20%, 100% 0%, 100% 80%, 0% 100%);
+}
+
+.slant-down {
+  -webkit-clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 80%);
+          clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 80%);
 }

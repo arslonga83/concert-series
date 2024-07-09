@@ -8,21 +8,67 @@ $danger: #B7BF10;
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 
-// link custom font files and set as main font family
+// override bootstrap default rounded corners everywhere
+$border-radius: 0;
 
-@font-face {
-  font-family: klinicSlab;
-  src: url(/fonts/KlinicSlabMedium.otf);
-}
+// link custom font files and set as main font family 
 
-@font-face {
-  font-family: klinicSlab;
-  font-weight: bold;
-  src: url(/fonts/KlinicSlabBold.otf);
-}
+// CHURCH FONT
+// @font-face {
+//   font-family: klinicSlab;
+//   src: url(/fonts/KlinicSlabMedium.otf);
+// }
+
+// @font-face {
+//   font-family: klinicSlab;
+//   font-weight: bold;
+//   src: url(/fonts/KlinicSlabBold.otf);
+// }
+
+// :root {
+//   --bs-body-font-family: 'klinicSlab';
+// }
+
+// ANOTHER FONT OPTION
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 :root {
-  --bs-body-font-family: 'klinicSlab';
+  --bs-body-font-family: 'PT Sans';
 }
 
 
+.section-shape-left {
+  clip-path: ellipse(1287px 290px at 75.18% 32.73%);
+}
+
+.section-shape-right {
+  clip-path: ellipse(1287px 316px at 12.92% 6.59%);
+}
+
+
+.cut-top-left {
+  clip-path: polygon(0 var(--offset), 100% 0, 100% 100%, 0 100%);
+}
+
+.cut-top-right {
+  clip-path: polygon(0 0, 100% var(--offset), 100% 100%, 0 100%);
+}
+
+.cut-bottom-left {
+  margin-bottom: calc(var(--offset) * -1);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - var(--offset)));
+}
+
+.cut-bottom-right {
+  margin-bottom: calc(var(--offset) * -1);
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - var(--offset)), 0 100%);
+}
+
+.slant-up {
+  clip-path: polygon(0 20%, 100% 0%, 100% 80%, 0% 100%);
+}
+
+.slant-down {
+  clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 80%);
+
+}
