@@ -1,8 +1,8 @@
 const express = require('express')
 const router = express.Router()
 
-router.get('/giving', (req, res) => {
-  res.render('giving')
+router.get('/donate', (req, res) => {
+  res.render('donate')
 })
 
 router.get('/volunteer', (req, res) => {

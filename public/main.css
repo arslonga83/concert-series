@@ -11969,6 +11969,8 @@ textarea.form-control-lg {
 :root {
   --bs-body-font-family: "PT Sans";
   --bs-border-radius: 0;
+  --bs-btn-border-radius: 0;
+  --bs-border-radius-lg: 0;
 }
 
 .section-shape-left {

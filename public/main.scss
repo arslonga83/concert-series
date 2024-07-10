@@ -33,7 +33,9 @@ $danger: #B7BF10;
   --bs-body-font-family: 'PT Sans';
   // override default rounded corners
   --bs-border-radius: 0;
-}
+  --bs-btn-border-radius: 0;
+  --bs-border-radius-lg: 0;
+  }
 
 
 .section-shape-left {
