@@ -8,21 +8,50 @@ $danger: #B7BF10;
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 
-// link custom font files and set as main font family
+// link custom font files and set as main font family 
 
-@font-face {
-  font-family: klinicSlab;
-  src: url(/fonts/KlinicSlabMedium.otf);
-}
+// CHURCH FONT
+// @font-face {
+//   font-family: klinicSlab;
+//   src: url(/fonts/KlinicSlabMedium.otf);
+// }
 
-@font-face {
-  font-family: klinicSlab;
-  font-weight: bold;
-  src: url(/fonts/KlinicSlabBold.otf);
-}
+// @font-face {
+//   font-family: klinicSlab;
+//   font-weight: bold;
+//   src: url(/fonts/KlinicSlabBold.otf);
+// }
+
+// :root {
+//   --bs-body-font-family: 'klinicSlab';
+// }
+
+// ANOTHER FONT OPTION
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 :root {
-  --bs-body-font-family: 'klinicSlab';
+  --bs-body-font-family: 'PT Sans';
+  // override default rounded corners
+  --bs-border-radius: 0;
+  --bs-btn-border-radius: 0;
+  --bs-border-radius-lg: 0;
+  }
+
+
+.section-shape-left {
+  clip-path: ellipse(81% 62.71% at 66.78% 65.53%);
+}
+
+.section-shape-right {
+  clip-path: ellipse(100% 73.52% at 81.14% 27.95%);
 }
 
 
+.slant-up {
+  clip-path: polygon(0 20%, 100% 0%, 100% 80%, 0% 100%);
+}
+
+.slant-down {
+  clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 80%);
+
+}

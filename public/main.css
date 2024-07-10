@@ -4,6 +4,7 @@
  * Copyright 2011-2024 The Bootstrap Authors
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 :root,
 [data-bs-theme=light] {
   --bs-blue: #0d6efd;
@@ -11965,15 +11966,29 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-@font-face {
-  font-family: klinicSlab;
-  src: url(/fonts/KlinicSlabMedium.otf);
-}
-@font-face {
-  font-family: klinicSlab;
-  font-weight: bold;
-  src: url(/fonts/KlinicSlabBold.otf);
-}
 :root {
-  --bs-body-font-family: "klinicSlab";
+  --bs-body-font-family: "PT Sans";
+  --bs-border-radius: 0;
+  --bs-btn-border-radius: 0;
+  --bs-border-radius-lg: 0;
+}
+
+.section-shape-left {
+  -webkit-clip-path: ellipse(81% 62.71% at 66.78% 65.53%);
+          clip-path: ellipse(81% 62.71% at 66.78% 65.53%);
+}
+
+.section-shape-right {
+  -webkit-clip-path: ellipse(100% 73.52% at 81.14% 27.95%);
+          clip-path: ellipse(100% 73.52% at 81.14% 27.95%);
+}
+
+.slant-up {
+  -webkit-clip-path: polygon(0 20%, 100% 0%, 100% 80%, 0% 100%);
+          clip-path: polygon(0 20%, 100% 0%, 100% 80%, 0% 100%);
+}
+
+.slant-down {
+  -webkit-clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 80%);
+          clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 80%);
 }
