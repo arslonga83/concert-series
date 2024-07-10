@@ -8,9 +8,6 @@ $danger: #B7BF10;
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 
-// override bootstrap default rounded corners everywhere
-$border-radius: 0;
-
 // link custom font files and set as main font family 
 
 // CHURCH FONT
@@ -34,35 +31,19 @@ $border-radius: 0;
 
 :root {
   --bs-body-font-family: 'PT Sans';
+  // override default rounded corners
+  --bs-border-radius: 0;
 }
 
 
 .section-shape-left {
-  clip-path: ellipse(1287px 290px at 75.18% 32.73%);
+  clip-path: ellipse(81% 62.71% at 66.78% 65.53%);
 }
 
 .section-shape-right {
-  clip-path: ellipse(1287px 316px at 12.92% 6.59%);
+  clip-path: ellipse(100% 73.52% at 81.14% 27.95%);
 }
 
-
-.cut-top-left {
-  clip-path: polygon(0 var(--offset), 100% 0, 100% 100%, 0 100%);
-}
-
-.cut-top-right {
-  clip-path: polygon(0 0, 100% var(--offset), 100% 100%, 0 100%);
-}
-
-.cut-bottom-left {
-  margin-bottom: calc(var(--offset) * -1);
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - var(--offset)));
-}
-
-.cut-bottom-right {
-  margin-bottom: calc(var(--offset) * -1);
-  clip-path: polygon(0 0, 100% 0, 100% calc(100% - var(--offset)), 0 100%);
-}
 
 .slant-up {
   clip-path: polygon(0 20%, 100% 0%, 100% 80%, 0% 100%);
