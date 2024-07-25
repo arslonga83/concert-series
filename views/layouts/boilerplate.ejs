@@ -8,15 +8,15 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="manifest" href="/site.webmanifest">
   <link rel="stylesheet" href="/main.css">
+  <meta name="description" content="<%= description %>">
   <meta name="google-site-verification" content="l6zQxtI1GPufkSvOkOIxjglgVt8qUGo5kSbkM5Lo46g" />
 
-  <!-- adding aos library from CDN for now to experiment -->
+  <!-- adding aos library from CDN  -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-
   <script src="/bootstrap.bundle.min.js" defer></script>
-  <title>Lake Grove Concert Series</title>
+  <title><%= title %></title>
 </head>
 <body>
   <%- include('../partials/navbar')  %>
@@ -24,7 +24,6 @@
   <%- include('../partials/footer')  %>
 </body>
 
-<!-- this is temporary too while testing this out -->
 <script>
   AOS.init();
 </script>

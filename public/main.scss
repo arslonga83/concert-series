@@ -1,4 +1,4 @@
-// customize color palette and import bootstrap css
+// customize color palette to LGPC brand and import bootstrap css
 
 $primary: #50A4BF;  
 $dark: black;
@@ -8,25 +8,7 @@ $danger: #B7BF10;
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 
-// link custom font files and set as main font family 
-
-// CHURCH FONT
-// @font-face {
-//   font-family: klinicSlab;
-//   src: url(/fonts/KlinicSlabMedium.otf);
-// }
-
-// @font-face {
-//   font-family: klinicSlab;
-//   font-weight: bold;
-//   src: url(/fonts/KlinicSlabBold.otf);
-// }
-
-// :root {
-//   --bs-body-font-family: 'klinicSlab';
-// }
-
-// ANOTHER FONT OPTION
+// SET FONT 
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 :root {

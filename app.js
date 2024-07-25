@@ -6,6 +6,7 @@ const ExpressError = require('./utils/ExpressError')
 const ejsMate = require('ejs-mate');
 const concertRoutes = require('./routes/concerts')
 const involvedRoutes = require('./routes/involved')
+const data = require('./views/layouts/metaData.js')
 
 app.engine('ejs', ejsMate);
 app.set('view engine', 'ejs')
@@ -18,15 +19,15 @@ app.use('/concerts', concertRoutes)
 app.use('/involved', involvedRoutes)
 
 app.get('/', (req, res) => {
-  res.render('index')
+  res.render('index', { ...data.index })
 })
 
 app.get('/about', (req, res) => {
-  res.render('about')
+  res.render('about', { ...data.about })
 })
 
 app.get('/contact', (req, res) => {
-  res.render('contact')
+  res.render('contact', { ...data.contact })
 })
 
 app.all('*', (req, res, next) => {
@@ -37,7 +38,7 @@ app.use((err, req, res, next) => {
   const { statusCode = 500 } = err
   if(!err.message) err.message = 'Something Went Wrong!'
   res.status(statusCode)
-  res.render('errors', { err })
+  res.render('errors', { err:err, ...data.errors })
   console.log(err)
 })
 
