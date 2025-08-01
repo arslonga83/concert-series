@@ -1,15 +1,15 @@
 <% for (let item of concertData.upcoming) { %>
 
 <div class="container p-5">
-    <div class="row" data-aos="fade-up" data-aos-duration="2000">
-      <div class="col-md-7">
+    <div class="row" data-aos="fade-right" data-aos-duration="2000">
+      <div class="col-md-7 my-auto">
         <h2 class="fw-normal lh-1"><%= item.title %></h2>
         <% for (let date of item.dates) { %>
           <h4><%= date %></h4>
         <% } %>
         <p class="lead text-body-secondary"><%= item.description %></p>
       </div>
-      <div class="col-md-5">
+      <div class="col-md-5 bg-secondary p-3" data-aos="zoom-in" data-aos-duration="2000">
           <img class="img-fluid mx-auto" width="500" height="500" src="<%= item.photo %>" role="img" focusable="false" alt="<%= item.alt %>">
       </div>
     </div>
