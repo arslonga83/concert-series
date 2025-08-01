@@ -29,42 +29,42 @@ const concertData =
       title: 'Requiem for the Living',
       dates: ['May 31 and June 1, 2025'],
       description: 'The Sanctuary Choir and members of the Oregon Symphony teamed up to present Dan Forrest\'s Requiem for the Living in honor of the 10th anniversary of the Lake Grove Concert Series!',
-      photo: 'https://www.youtube.com/embed/Xf4OPVCnhz0?si=h8cNNjnaFnOstPtK',
+      video_ID: 'Xf4OPVCnhz0',
     },{
       title: 'Tapestry',
       dates: ['February 23, 2025'],
       description: 'Hearts were uplifted through music with the return of renowned vocalists Abigail Krawson and LaRiche Lamar. This classically trained and pop-inspired duo celebrated friendship and empowerment through a vibrant collection of eclectic music that seamlessly transcends genres and backgrounds.',
-      photo: 'https://www.youtube.com/embed/Hj4ViXQ2lNE?si=wzWR1rXtc6XBMNFF'
+      video_ID: 'Hj4ViXQ2lNE'
     }, {
       title: 'Bells and Brass',
       dates: ['December 22, 2024'],
       description: 'Audiences delighted in the magic of the season with holiday carols and festive favorites at our Bells and Brass concerts, featuring the Covenant Bells and members of the Oregon Symphony.',
-      photo: 'https://www.youtube.com/embed/0J3l4SiAvvM?si=n8RbPIM-AjRLFjsy'
+      video_ID: '0J3l4SiAvvM'
     }, {
       title: 'Bells and Whistles: An Organ Concert for All Ages',
       dates: ['October 6, 2024'],
       description: 'We kicked off our 10th season in this family-friendly concert featuring organist, Jeff Wood. The audience was treated to a \'backstage tour\' of Lake Grove\'s pipe organ, and experienced first-hand the wide range of musical possibilities this instrument offers!',
-      photo: 'https://www.youtube.com/embed/cMFyyuKwZ9M?si=k04acN48deB7Tsrx'
+      video_ID: 'cMFyyuKwZ9M'
     }, {
       title: 'Illuminare', 
       dates: ['June 1, 2024'],
       description: 'Lake Grove’s Sanctuary Choir’s spring concert featured Illuminare, a beautiful new piece by Elaine Hagenberg, one of the choir’s favorite composers. The choir was accompanied by members of the Oregon Symphony.',
-      photo: 'https://www.youtube.com/embed/7ZrvZjRYKz4?si=LGY1OD0akEClej5q'
+      video_ID: '7ZrvZjRYKz4'
     }, {
       title: 'Tapestry',
       dates: ['March 12, 2024'],
       description: 'Back by popular demand–a new collection of imaginative interweavings of music spanning the centuries and styles.', 
-      photo: 'https://www.youtube.com/embed/WXD0QS1sBtQ?si=o2_evChZBk2VJWCl'
+      video_ID: 'WXD0QS1sBtQ'
     }, {
       title: 'Bells and Brass',
       dates: ['December 17, 2023'], 
       description: 'The Covenant Bell Choir and brass from the Oregon Symphony filled our Sanctuary with the joyous sounds of the season.',
-      photo: 'https://www.youtube.com/embed/TmcbY33iML8?si=Vwbv7l0uONOX8C1i'
+      video_ID: 'TmcbY33iML8'
     }, {
       title: 'Fanfares and Elegies',
       dates: ['October 8, 2023'],
       description: 'Lake Grove\’s own organist, Jeff Wood is joined by members of the Oregon Symphony for an exciting program of music for organ and other instruments.',
-      photo: 'https://www.youtube.com/embed/A91Afg4B9Y0?si=mAoiPibg4OgOtiq2'
+      video_ID: 'A91Afg4B9Y0'
     },
   
     ]

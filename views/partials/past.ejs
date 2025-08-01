@@ -1,17 +1,24 @@
+
 <% for (let item of concertData.past) { %>
 
 <div class="container p-5">
-    <div class="row" data-aos="fade-up" data-aos-duration="2000">
-      <div class="col-md-7">
+    <div class="row" data-aos="fade-right" data-aos-duration="2000">
+      <div class="col-md-7 my-auto">
         <h2 class="fw-normal lh-1"><%= item.title %></h2>
          <% for (let date of item.dates) { %>
         <h4><%= date %></h4>
         <% } %>
         <p class="lead text-body-secondary"><%= item.description %></p>
       </div>
-      <div class="col-md-5">
+      <div class="col-md-5 bg-secondary p-3" data-aos="zoom-in" data-aos-duration="2000">
         <div class="ratio ratio-16x9">
-          <iframe width="560" height="315" src="<%= item.photo %>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+          <!-- this shows the placeholder thumbnail image for faster loading, using method from https://css-tricks.com/lazy-load-embedded-youtube-videos/ -->
+
+          <iframe width="560" height="315" 
+          src="https://www.youtube.com/embed/<%= item.video_ID %>&autoplay=1"
+          srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/<%= item.video_ID %>><img src=https://img.youtube.com/vi/<%= item.video_ID %>/hqdefault.jpg alt='<%= item.title %>'><span>▶</span></a>"
+          frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" loading="lazy" allowfullscreen></iframe>
         </div>
       </div>
     </div>
