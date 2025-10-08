@@ -1,11 +1,6 @@
 const concertData = 
 {
   upcoming: [
-    {title: 'Keyboard Masterworks: Old and New', 
-    dates: ['Sunday, October 5, 1:00PM'], 
-    description: 'Join our organist, Jeff Wood, as he performs music he has been meaning to learn for 20 years! These great masterworks are sure to inspire, and you will also be tapping along with songs by more recent composers. This family-friendly program features joyful and uplifting music for piano and organ that will leave you feeling refreshed.', 
-    photo: '/photos/jeff-2025.png',
-    alt: 'Jeff Wood playing the piano',},
     {title: 'Bells and Brass', 
     dates: ['Sunday, December 21, 11:30AM and 5:30PM'], 
     description: 'Celebrate the magic of Christmas with beloved carols and holiday favorites. Featuring the Covenant Bells and members of the Oregon Symphony brass section, our 25th annual Bells and Brass returns with two performances—a festive tradition to share with family and friends.', 
@@ -26,6 +21,11 @@ const concertData =
 
   past: 
     [{
+      title: 'Keyboard Masterworks: Old and New',
+      dates: ['October 5, 2025'],
+      description: 'Own own organist, Jeff Wood shared a mix of brand new pieces, alongside classics he had been meaning to learn for 20 years.',
+      video_ID: 'bo-ypRcbMHs',
+    },{
       title: 'Requiem for the Living',
       dates: ['May 31 and June 1, 2025'],
       description: 'The Sanctuary Choir and members of the Oregon Symphony teamed up to present Dan Forrest\'s Requiem for the Living in honor of the 10th anniversary of the Lake Grove Concert Series!',
