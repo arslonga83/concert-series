@@ -1,11 +1,6 @@
 const concertData = 
 {
   upcoming: [
-    {title: 'Bells and Brass', 
-    dates: ['Sunday, December 21, 11:30AM and 5:30PM'], 
-    description: 'Celebrate the magic of Christmas with beloved carols and holiday favorites. Featuring the Covenant Bells and members of the Oregon Symphony brass section, our 25th annual Bells and Brass returns with two performances—a festive tradition to share with family and friends.', 
-    photo: '/photos/bells-2025.png',
-    alt: 'Members of the Covenant Bell Choir playing bells',},
     {title: 'Tapestry', 
     dates: ['Sunday, March 15, 1:00PM'], 
     description: 'Grab your bestie and enjoy the diverse playlist of acclaimed singers, Abigail Krawson and LaRiche Lamar. This classically trained duo draws their inspiration from all styles of music, exploring everything from pop and indie to musical theater and opera. Tapestry concerts weave together the complexities of human emotions through song. It is inspirational and empowering for all ages! Come for the music, stay for the community!', 
@@ -21,6 +16,11 @@ const concertData =
 
   past: 
     [{
+      title: 'Bells and Brass',
+      dates: ['Sunday, December 21, 11:30AM and 5:30PM'],
+      description: 'Covenant Bells and members of the Oregon Symphony brass section presented our 25th annual Bells and Brass concert.',
+      video_ID: 'uMFanXy4pJE',
+    },{
       title: 'Keyboard Masterworks: Old and New',
       dates: ['October 5, 2025'],
       description: 'Own own organist, Jeff Wood shared a mix of brand new pieces, alongside classics he had been meaning to learn for 20 years.',
