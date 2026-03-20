@@ -1,11 +1,6 @@
 const concertData = 
 {
   upcoming: [
-    {title: 'Tapestry', 
-    dates: ['Sunday, March 15, 1:00PM'], 
-    description: 'Grab your bestie and enjoy the diverse playlist of acclaimed singers, Abigail Krawson and LaRiche Lamar. This classically trained duo draws their inspiration from all styles of music, exploring everything from pop and indie to musical theater and opera. Tapestry concerts weave together the complexities of human emotions through song. It is inspirational and empowering for all ages! Come for the music, stay for the community!', 
-    photo: '/photos/tapestry-2025.png',
-    alt: 'LaRiche Lamarr and Abby Krawson walking down the center sanctuary aisle'},
     {title: 'Let Love Be Heard', 
     dates: ['May 30, 7:00PM', 'May 31, 2:00PM'], 
     description: 'Join us for an inspiring program of unity, healing, and hope, featuring dynamic gospel soloist Pam Baker, stunning soprano Abigail Krawson, and the Lake Grove Presbyterian Church Sanctuary Choir. This uplifting concert showcases songs by American composers, and celebrates the unifying power of music.', 
@@ -16,6 +11,11 @@ const concertData =
 
   past: 
     [{
+      title: 'Tapestry',
+      dates: ['Sunday, March 15, 1:00PM'],
+      description: 'Abigail Krawson and LaRiche Lamar returned for the 4th iteration of Tapestry, exploring everything from pop and indie to musical theater and opera.',
+      video_ID: 'L93-dBf1yLs',
+    },{
       title: 'Bells and Brass',
       dates: ['Sunday, December 21, 11:30AM and 5:30PM'],
       description: 'Covenant Bells and members of the Oregon Symphony brass section presented our 25th annual Bells and Brass concert.',
