@@ -1,16 +1,21 @@
 const concertData = 
 {
   upcoming: [
-    {title: 'Let Love Be Heard', 
-    dates: ['May 30, 7:00PM', 'May 31, 2:00PM'], 
-    description: 'Join us for an inspiring program of unity, healing, and hope, featuring dynamic gospel soloist Pam Baker, stunning soprano Abigail Krawson, and the Lake Grove Presbyterian Church Sanctuary Choir. This uplifting concert showcases songs by American composers, and celebrates the unifying power of music.', 
-    photo: '/photos/choir-2025.png',
-    alt: 'Choir members wearing black and singing.',
-    }
+    // {title: '50 Years Young - A Pipe Organ Birthday Party', 
+    // dates: ['October 4, 2026'], 
+    // description: 'Lake Grove\'s pipe organ turns 50 this year! Join organist, Jeff Wood, as he celebrates this milestone by performing music from the dedication recital, brand new pieces, and other \'party tunes\'.', 
+    // photo: '/photos/jeff_organ.png',
+    // alt: 'Choir members wearing black and singing.',
+    // }
   ], 
 
   past: 
     [{
+      title: 'Let Love Be Heard',
+      dates: ['May 30, 7:00PM', 'May 31, 2:00PM'],
+      description: 'An inspiring program of unity, healing, and hope, featuring dynamic gospel soloist Pam Baker, stunning soprano Abigail Krawson, and the Lake Grove Presbyterian Church Sanctuary Choir.',
+      video_ID: 'NeRQvCYyL9c',
+    },{
       title: 'Tapestry',
       dates: ['Sunday, March 15, 1:00PM'],
       description: 'Abigail Krawson and LaRiche Lamar returned for the 4th iteration of Tapestry, exploring everything from pop and indie to musical theater and opera.',
