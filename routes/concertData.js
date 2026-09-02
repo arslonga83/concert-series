@@ -1,12 +1,30 @@
 const concertData = 
 {
   upcoming: [
-    // {title: '50 Years Young - A Pipe Organ Birthday Party', 
-    // dates: ['October 4, 2026'], 
-    // description: 'Lake Grove\'s pipe organ turns 50 this year! Join organist, Jeff Wood, as he celebrates this milestone by performing music from the dedication recital, brand new pieces, and other \'party tunes\'.', 
-    // photo: '/photos/jeff_organ.png',
-    // alt: 'Choir members wearing black and singing.',
-    // }
+    {title: '50 Years Young - A Pipe Organ Birthday Party', 
+    dates: ['October 4, 2026 - 1pm'], 
+    description: 'Lake Grove’s Pipe Organ was dedicated in 1976, and we want to celebrate! Join organist, Jeff Wood, for a festive program that will feature pieces from that first dedication recital, alongside new music fit for a celebration.', 
+    photo: '/photos/2026-organ.jpg',
+    alt: 'A large pipe organ with a man at the console..',
+    },
+       {title: 'Bells and Brass', 
+    dates: ['December 13, 2026 - 11:30am and 6pm'], 
+    description: 'Ring in the Christmas Season with one of Lake Grove’s most beloved traditions. Join us for our 26th annual Bells and Brass concerts to listen to your favorite carols and maybe discover a new one! The Covenant Bells are joined by members of the Oregon Symphony brass section to create a festive atmosphere you surely do not want to miss!', 
+    photo: '/photos/2026-bells.jpg',
+    alt: 'A man ringing a large handbell.',
+    },
+       {title: 'Tapestry', 
+    dates: ['February 28, 2027 - 1pm'], 
+    description: 'Five years of Tapestry magic, and it keeps getting better. Grab your bestie and join dynamic duo Abigail Krawson & LaRiche Lamar as they celebrate WITH you. From opera to pop, folk to musical theater, audience favorites to brand new duets, this concert will inspire, unite, and stay with you. Whether you\'re a longtime Tapestry fan or discovering us for the first time, there\'s a seat here with your name on it. Come as you are. Leave with a full heart.', 
+    photo: '/photos/2026-tapestry.jpg',
+    alt: 'Two singers in front of a pipe organ.',
+    },
+       {title: 'From Jazz to Joy', 
+    dates: ['June 5, 7pm and June 6, 11:30am'], 
+    description: 'Journey from jazz to joy as the 90-voice Sanctuary Choir, joined by a chamber orchestra of Oregon Symphony musicians, presents two jubilant mass settings: Bob Chilcott’s Little Jazz Mass and Joseph Haydn’s Theresienmesse (Theresa Mass). From the rhythmic vitality and jazz-inspired charm of Chilcott’s work to the radiant beauty and classical grandeur of Haydn’s masterpiece, this inspiring concert offers a captivating musical experience for every listener.', 
+    photo: '/photos/2026-choir.png',
+    alt: 'Choir members wearing black and singing.',
+    },
   ], 
 
   past: 
